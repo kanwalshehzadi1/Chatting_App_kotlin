@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/chatlogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="78dp"/>
+
+    <EditText
+        android:id="@+id/et_Email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/app_logo"
+        android:textColor="@color/black"
+        android:textColorHint="#616060"
+        android:layout_marginTop="10dp"
+        android:hint="Email"
+        android:background="@drawable/edit_background"
+        android:inputType="textEmailAddress"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="13dp"/>
+
+    <EditText
+        android:background="@drawable/edit_background"
+        android:inputType="numberPassword"
+        android:id="@+id/et_Password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@color/black"
+        android:textColorHint="#616060"
+        android:layout_below="@+id/et_Email"
+        android:layout_marginTop="10dp"
+        android:hint="Password"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="13dp"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_Password"
+        android:textAllCaps="false"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:text="Login"
+        android:textStyle="bold"
+        android:backgroundTint="#F89D0A"/>
+    <Button
+        android:id="@+id/btn_SignUp"
+        android:layout_width="150dp"
+        android:textAllCaps="false"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_login"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:text="SignUp"
+        android:textStyle="bold"
+        android:backgroundTint="#F89D0A"/>
+
+
+
+</RelativeLayout>
